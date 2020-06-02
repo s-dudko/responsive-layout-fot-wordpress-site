@@ -80,11 +80,49 @@
         </div>
         <div class="column-left__menu">
             <div class="column-left__menu-nav">
-                <a href="#" class="column-left__menu-item column-left__menu-item-active">Description</a>
-                <a href="#" class="column-left__menu-item">Support</a>
+                <a href="#" class="column-left__menu-item">Description</a>
+                <a href="#" class="column-left__menu-item column-left__menu-item-active">Support</a>
             </div>
             <div class="column-left__menu__content">
-                <p>In this example user will be asked to provide an email and name before downloading the file</p>
+                <table class="column-left__menu__content__table">
+                    <thead>
+                    <tr>
+                        <th>Topic</th>
+                        <th>Posts</th>
+                        <th>Last Poster</th>
+                        <th>Updated</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td colspan="4">No topics, would you like to create one?</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <form action="" class="column-left__menu__content__form">
+                    <div class="form-text">
+                        <span class="form-title">Leave your comment/question</span>
+                        <div class="form-advice">
+                            <span>Allow markup: &ltstrong&gt, &ltem&gt, &lta&gt</span>
+                            <span>Wrap your code using &ltpre&gt&lt/pre&gt</span>
+                        </div>
+                    </div>
+                    <div class="form-input-list">
+                        <div class="form-input-item">
+                            <input type="text" name="title" id="title" placeholder="Title">
+                            <label for="title"></label>
+                        </div>
+                        <div class="form-input-item">
+                            <textarea rows="10" type="text" name="comment" id="comment" placeholder="What is your comment about?"></textarea>
+                            <label for="comment"></label>
+                        </div>
+                        <div class="form-input-item-radio">
+                            <input type="checkbox" name="notify" id="notify">
+                            <label for="notify">Notify me of follow</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="post_btn">Post</button>
+                </form>
             </div>
         </div>
         <div class="column-left__back">
