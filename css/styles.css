@@ -1,5 +1,7 @@
 body {
     background-color: #F6F7FB;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -8,9 +10,6 @@ body {
     align-items: center;
     margin: 0 auto;
     width: 80%;
-
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
 }
 
 p {
@@ -89,7 +88,7 @@ p {
 .list-container__item {
     display: flex;
     padding-bottom: 1rem;
-    border-bottom: 2px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
     margin-top: 1rem;
 }
 
@@ -161,43 +160,239 @@ p {
 .list-container__item__links__btn {
     display: flex;
     align-items: center;
-    padding: .6rem 1.4rem;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 0;
     border: 1px solid #BDBDBD;
     border-radius: 4px;
     text-decoration: none;
     font-size: 1rem;
 }
 
-.list-container__item__links div {
+.list-container__item__links > div {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 1.2rem;
-}
-
-.list-container__item__links div:last-child {
-    margin-right: 0;
+    margin-left: 1.2rem;
+    width: 50%;
 }
 
 .show_btn {
-    padding-left: 3rem;
     color: #4F4F4F;
-    background: url("../img/feather_external-link.png") no-repeat 1.5rem 50%;
+    display: flex;
 }
 
 .show_btn:hover {
-    background: url("../img/feather_external-link-white.png") no-repeat 1.5rem 50%, #4F4F4F;
+    background: #4F4F4F;
     color: #F2F2F2;
+    border: none;
+}
+
+.show_btn:hover > .show_btn_img {
+    background: url("../img/feather_external-link-white.png") no-repeat 0 50%;
+}
+
+.show_btn_img {
+    padding-left: 1.5rem;
+    background: url("../img/feather_external-link.png") no-repeat 0 50%;
+}
+
+.dwn_btn_img {
+    padding-left: 1.5rem;
+    background: url("../img/download.png") no-repeat 0 50%;
 }
 
 .dwn_btn {
-    padding-left: 3rem;
-    background: url("../img/download.png") no-repeat 1.5rem 50%, #8CC051;
+    background: #8CC051;
     color: #FFFFFF;
 }
 
 .dwn_btn:hover {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+    border: none;
+}
+
+/*Page 2*/
+.column-container {
+    display: flex;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding-bottom: 3.75rem;
+}
+
+.column-left {
+    padding: 0 6rem;
+    margin-bottom: 3rem;
+    flex: 0 0 calc(60% - 12rem);
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #C4C4C4;
+}
+
+.column-left__title {
+    padding-top: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #333333;
+}
+
+.column-left__pdf-preview {
+    width: 100%;
+    margin-bottom: 2.2rem;
+}
+
+.column-left__pdf-preview img {
+    width: 100%;
+}
+
+.column-left__table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #C4C4C4;
+    border-radius: 4px;
+    margin-bottom: 1.4rem;
+}
+
+.column-left__table__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 2.1rem;
+    border-bottom: 1px solid #C4C4C4;
+}
+
+.column-left__table__item-name,
+.column-left__table__item-attribute {
+    flex: 0 0 25%;
+    font-size: 0.9rem;
+}
+
+.column-left__table__item-name {
+    font-weight: 600;
+}
+
+.column-left__table__item-attribute__rate {
+    display: flex;
+}
+
+.column-left .list-container__item__links > div:first-child {
+    margin: 0 1.6rem 0 0;
+}
+
+.column-left .list-container__item__links > div:last-child {
+    margin: 0 0 0 1.6rem;
+}
+
+.column-left__table__item-attribute__views {
+    display: flex;
+}
+
+.column-left__table__item-attribute__views > p {
+    margin-left: 10px;
+}
+
+.column-left__banner-img {
+    margin-top: 3.75rem;
+}
+
+.column-left__banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    height: 200px;
+}
+
+.column-left__menu {
+    margin: 3rem 0 3.75rem;
+}
+
+.column-left__menu-nav {
+    display: flex;
+    border-bottom: 1px solid #333333;
+    margin-bottom: 1.375rem;
+}
+
+.column-left__menu-nav > a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: normal;
+    margin-right: 2rem;
+}
+
+.column-left__menu-nav > a:last-child {
+    margin-right: 0;
+}
+
+.column-left__menu-nav > a.column-left__menu-item-active {
+    border-bottom: 4px solid black;
+    font-weight: 600;
+}
+
+.column-left__back > a {
+    color: #8CC051;
+}
+
+.column-left__menu__content > p {
+    color: #828282;
+    font-size: 1rem;
+}
+
+.column-right {
+    flex: 0 0 calc(40% - 2.4rem);
+}
+
+.column-right__container {
+    margin: 2rem 3rem 0 1.2rem;
+}
+
+.column-right__container__item {
+    width: 100%;
+    background-color: #F6F7FB;
+    padding: 1.2rem;
+    margin-bottom: 1.6rem;
+}
+
+.column-right__container__item__downloads-item {
+    margin-bottom: 1.5rem;
+}
+
+.column-right__container__item__downloads-item-count {
+    display: flex;
+}
+
+.column-right__container__item__downloads-item-count > p {
+    color: #828282;
+    font-style: italic;
+}
+
+.column-right__container__item__downloads-item-count > img {
+    margin-right: 10px;
+}
+
+.column-right__container__item-title {
+    color: #4F4F4F;
+    font-size: 1.5rem;
+}
+
+.column-right__container__item__downloads-item-name {
+    margin: 0 0 .5rem;
+    font-size: 1rem;
+    color: #000000;
+}
+
+.column-right__container__item-list > li {
+    margin-bottom: .8rem;
+    font-weight: 500;
+}
+
+.column-right__container .column-left__back {
+    margin: 3rem 0;
 }
 
 @media all and (max-width: 1200px) {
@@ -213,12 +408,12 @@ p {
         margin-left: 1rem;;
     }
 
-    .list-container__item__links div {
+    .list-container__item__links > div {
         margin: 0;
         width: 100%;
     }
 
-    .list-container__item__links div:last-child {
+    .list-container__item__links > div:last-child {
         margin-right: 0;
         margin-top: 1rem;
     }
@@ -263,7 +458,7 @@ p {
         order: 2;
     }
 
-    .list-container__item__desc{
+    .list-container__item__desc {
         flex: 0 0 100%;
         order: 1;
         margin-bottom: 2rem;
@@ -275,9 +470,10 @@ p {
         justify-content: center;
         align-items: center;
         margin: 0;
+        min-width: 50%;
     }
 
-    .list-container__item__links div {
+    .list-container__item__links > div {
         margin: 0;
         width: 100%;
     }
@@ -285,33 +481,63 @@ p {
     .title h1 {
         font-size: 1.75rem;
     }
+
+    .column-left .list-container__item__links {
+        order: initial;
+    }
+
+    .column-left .list-container__item__links > div {
+        order: initial;
+        margin: 0;
+    }
+
+    .column-left .list-container__item__links > div:last-child {
+        margin: 0;
+    }
+
+    .column-left .list-container__item__links > div:first-child {
+        margin: 0 0 1rem;
+    }
+
+    .column-container{
+        flex-direction: column;
+    }
+
+    .column-left{
+        padding: 0 1.5rem;
+        width: calc(100% - 3rem);
+        border: none;
+    }
+
+    .column-right{
+        padding: 0 1.5rem;
+        width: calc(100% - 3rem);
+    }
+
+    .column-right__container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .column-right__container__item{
+        width: calc(100% - 2.4rem);
+    }
 }
 
-@media all and (max-width: 380px){
-    .list-container__item__links__btn{
+@media all and (max-width: 380px) {
+    body {
+        font-size: 12px;
+    }
+
+    .list-container__item__links__btn {
         font-size: .7rem;
     }
 
-    .list-container__item__img{
+    .list-container__item__img {
         margin-right: 8px;
     }
 
-    .show_btn {
-        padding-left: 2rem;
-        background: url("../img/feather_external-link.png") no-repeat .5rem 50%;
-    }
-
-    .show_btn:hover {
-        padding-left: 2rem;
-        background: url("../img/feather_external-link-white.png") no-repeat .5rem 50%, #4F4F4F;
-    }
-
-    .dwn_btn {
-        padding-left: 2rem;
-        background: url("../img/download.png") no-repeat .5rem 50%, #8CC051;
-    }
-
-    .dwn_btn:hover {
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.18);
+    .column-left__table__item{
+        padding: 1.4rem 1rem;
     }
 }
