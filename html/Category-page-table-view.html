@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximal-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../css/styles.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Table view</title>
+</head>
+<body>
+<div class="column-container">
+    <div class="column-left small-padding">
+        <h2 class="column-left__title">CM Downloads (<span class="count-dwn">5</span>)</h2>
+        <div class="column-left__sort-row">
+            <form action="" class="sort-form">
+                <div class="sort-form__item">
+                    <label for="sort-by">Sort by: </label>
+                    <select name="sort-by" id="sort-by" class="minimal">
+                        <option>Recently modified</option>
+                        <option>More downloads</option>
+                        <option>More relevant</option>
+                    </select>
+                </div>
+                <div class="sort-form__item">
+                    <label for="layout">Layout:</label>
+                    <select name="Layout" id="layout" class="minimal">
+                        <option>List</option>
+                        <option>Tiles</option>
+                        <option>Table</option>
+                        <option>Category</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="column-left__menu">
+            <div class="column-left__menu-nav">
+                <a href="#" class="column-left__menu-item column-left__menu-item-active">All downloads (<span>5</span>)</a>
+                <a href="#" class="column-left__menu-item">Documents (<span>3</span>)</a>
+                <a href="#" class="column-left__menu-item">Music (<span>2</span>)</a>
+            </div>
+        </div>
+        <div class="column-left__category-content">
+            <div class="table-view-item table-view-item-header">
+                <div class="table-view-item__title post-header">Title</div>
+                <div class="table-view-item__status post-header">Status</div>
+                <div class="table-view-item__dwn post-header">Downloads</div>
+                <div class="table-view-item__links post-header">Actions</div>
+            </div>
+            <div class="table-view-item">
+            <div class="table-view-item__title">
+                <div class="table-view-item__title-main">
+                    <div class="category-block__list-item__img">
+                        <img src="../img/no-img.png" alt="plugin-item">
+                    </div>
+                    <strong class="plugin-name">Ask For Email Before Download</strong>
+                </div>
+                <div class="category-block__list-item__audio">
+                    <audio src="../audio/1.mp3" controls></audio>
+                </div>
+
+            </div>
+            <div class="table-view-item__status"><span class="post-published">Published</span></div>
+            <div class="table-view-item__dwn">
+                <div class="downloads-count">
+                    <p><span>1592</span> downloads</p>
+                </div>
+            </div>
+            <div class="table-view-item__links">
+                <div>
+                    <a href="#" class="list-container__item__links__btn dwn_btn">
+                        <div>Edit</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="list-container__item__links__btn show_btn">
+                        <div>Delete</div>
+                    </a>
+                </div>
+                <div class="column-left__back">
+                    <a href="" class="column-left__back-link">Unpublished</a>
+                </div>
+            </div>
+        </div>
+            <div class="table-view-item">
+            <div class="table-view-item__title">
+                <div class="table-view-item__title-main">
+                    <div class="category-block__list-item__img">
+                        <img src="../img/no-img.png" alt="plugin-item">
+                    </div>
+                    <strong class="plugin-name">Ask For Email Before Download</strong>
+                </div>
+            </div>
+            <div class="table-view-item__status"><span class="post-published">Published</span></div>
+            <div class="table-view-item__dwn">
+                <div class="downloads-count">
+                    <p><span>1592</span> downloads</p>
+                </div>
+            </div>
+            <div class="table-view-item__links">
+                <div>
+                    <a href="#" class="list-container__item__links__btn dwn_btn">
+                        <div>Edit</div>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" class="list-container__item__links__btn show_btn">
+                        <div>Delete</div>
+                    </a>
+                </div>
+                <div class="column-left__back">
+                    <a href="" class="column-left__back-link">Unpublished</a>
+                </div>
+            </div>
+        </div>
+            <div class="table-view-item">
+                <div class="table-view-item__title">
+                    <div class="table-view-item__title-main">
+                        <div class="category-block__list-item__img">
+                            <img src="../img/no-img.png" alt="plugin-item">
+                        </div>
+                        <strong class="plugin-name">Ask For Email Before Download</strong>
+                    </div>
+                </div>
+                <div class="table-view-item__status"><span class="post-published">Published</span></div>
+                <div class="table-view-item__dwn">
+                    <div class="downloads-count">
+                        <p><span>1592</span> downloads</p>
+                    </div>
+                </div>
+                <div class="table-view-item__links">
+                    <div>
+                        <a href="#" class="list-container__item__links__btn dwn_btn">
+                            <div>Edit</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="list-container__item__links__btn show_btn">
+                            <div>Delete</div>
+                        </a>
+                    </div>
+                    <div class="column-left__back">
+                        <a href="" class="column-left__back-link">Unpublished</a>
+                    </div>
+                </div>
+            </div>
+            <div class="table-view-item">
+                <div class="table-view-item__title">
+                    <div class="table-view-item__title-main">
+                        <div class="category-block__list-item__img">
+                            <img src="../img/no-img.png" alt="plugin-item">
+                        </div>
+                        <strong class="plugin-name">Ask For Email Before Download</strong>
+                    </div>
+                </div>
+                <div class="table-view-item__status"><span class="post-published">Published</span></div>
+                <div class="table-view-item__dwn">
+                    <div class="downloads-count">
+                        <p><span>1592</span> downloads</p>
+                    </div>
+                </div>
+                <div class="table-view-item__links">
+                    <div>
+                        <a href="#" class="list-container__item__links__btn dwn_btn">
+                            <div>Edit</div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#" class="list-container__item__links__btn show_btn">
+                            <div>Delete</div>
+                        </a>
+                    </div>
+                    <div class="column-left__back">
+                        <a href="" class="column-left__back-link">Unpublished</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="column-right">
+    </div>
+</div>
+</body>
+</html>
