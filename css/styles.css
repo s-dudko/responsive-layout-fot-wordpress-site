@@ -1504,6 +1504,7 @@ select:-moz-focusring {
     }
 
     .open{
+        padding: 0;
         align-self: flex-start;
         transform: rotate(180deg);
     }
