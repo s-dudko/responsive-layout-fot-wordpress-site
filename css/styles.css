@@ -865,11 +865,18 @@ select:-moz-focusring {
     margin: 0;
 }
 
-.small-padding {
+.column-left.small-padding {
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 70%;
-    flex: 0 0 70%;
+    -ms-flex: 0 0 65%;
+    flex: 0 0 65%;
     padding: 0 2.2rem 0 3.4rem;
+}
+
+.column-right.small-padding {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 30%;
+    flex: 0 0 30%;
+    padding: 0 2.2rem;
 }
 
 .category-block__list-item__audio > audio {
@@ -888,7 +895,7 @@ select:-moz-focusring {
     flex-direction: column;
 }
 
-.column-left__category-content-small {
+.category-table-small {
     display: none;
 }
 
@@ -977,7 +984,7 @@ select:-moz-focusring {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 15%;
     flex: 0 0 15%;
-    margin-left: 2rem;
+    margin-left: 1rem;
     padding-bottom: 1.1rem;
 }
 
@@ -993,8 +1000,8 @@ select:-moz-focusring {
 .table-view-item__title .plugin-name {
     margin: 0;
     -webkit-box-flex: 1;
-    -ms-flex: 1 1 90%;
-    flex: 1 1 90%;
+    -ms-flex: 0 0 100%;
+    flex: 1 1 100%;
 }
 
 .table-view-item__title .category-block__list-item__img {
@@ -1294,13 +1301,15 @@ select:-moz-focusring {
         flex-direction: column;
     }
 
-    .column-left {
+    .column-left,
+    .column-left.small-padding{
         padding: 0 1.5rem;
         width: 100%;
         border: none;
     }
 
-    .column-right {
+    .column-right,
+    .column-right.small-padding{
         padding: 0 1.5rem;
         width: 100%;
     }
@@ -1361,7 +1370,6 @@ select:-moz-focusring {
     .column-left__sort-row{
         margin-bottom: 0;
     }
-
 }
 
 @media all and (max-width: 560px) {
@@ -1392,7 +1400,113 @@ select:-moz-focusring {
         flex: 0 0 80%;
     }
 
+    .column-left__category-content.category-table{
+        display: none;
+    }
 
+    .category-table-small{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .column-left__menu{
+        margin: 2rem 0 1rem;
+    }
+
+    .table-view-item-small .table-view-item-header{
+        flex-direction: column;
+    }
+
+    .table-view-item-small{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 1rem 0;
+        border-bottom: 1px solid #C4C4C4;
+    }
+
+    .table-view-item-small__row{
+        display: flex;
+        justify-content: flex-start;
+        font-size: .8rem;
+    }
+
+    .table-view-item-small__row .plugin-name{
+        font-size: .8rem;
+    }
+
+    .table-view-item-small__row  *{
+        margin: 0;
+    }
+
+    .table-view-item-small__row .post-header{
+        flex: 0 0 38%;
+        margin-bottom: 2rem;
+    }
+
+    .table-view-item-small__row .table-view-item-small__row-main-item{
+        flex: 0 0 58%;
+    }
+
+    .table-view-item-small__row-main-item .category-block__list-item__img{
+        order: 2;
+        margin-top: 1rem;
+    }
+
+    .table-view-item-small__row-main-item .table-view-item__links{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .table-view-item-small__row-main-item .table-view-item__links > div{
+        width: 30%;
+        margin: 0;
+    }
+
+    .table-view-item-small__row-main-item .table-view-item__links > *{
+        margin-bottom: 1rem;
+    }
+
+    .table-view-item-small__row-audio{
+        width: 100%;
+    }
+
+    .small_btn{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        padding: 1rem 0;
+        border-radius: 50%;
+    }
+
+    .edit_btn{
+        background-color: #8CC051;
+        border: 1px solid #8CC051;
+    }
+
+    .del_btn{
+        background-color: #333333;
+        border: 1px solid #333333;
+    }
+
+    .table-view-item-small__tear-up{
+        width: 40px;
+        padding-right: 20px;
+    }
+
+    .open{
+        align-self: flex-start;
+        transform: rotate(180deg);
+    }
 }
 
 @media all and (max-width: 460px) {
