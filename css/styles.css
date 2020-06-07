@@ -985,7 +985,6 @@ select:-moz-focusring {
     -ms-flex: 0 0 15%;
     flex: 0 0 15%;
     margin-left: 1rem;
-    padding-bottom: 1.1rem;
 }
 
 .table-view-item-header {
@@ -1345,7 +1344,6 @@ select:-moz-focusring {
         -ms-flex-direction: column;
         flex-direction: column;
         width: 90%;
-        margin-bottom: 1rem;
     }
 
     .table-view-item__title-main {
